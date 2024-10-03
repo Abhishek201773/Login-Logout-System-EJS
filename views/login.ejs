@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif; 
+            background-image: url('/images/hd-desktop-wallpaper-9.jpg'); 
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: #fff; /* Text color for contrast */
+        }
+        .container {
+            background-color: rgba(196, 174, 174, 0.85); /* Slightly more opaque for readability */
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+            width: 320px;
+            text-align: center;
+            transition: transform 0.3s; /* Smooth transition for hover effect */
+        }
+        .container:hover {
+            transform: scale(1.05); /* Scale up on hover */
+        }
+        h1 {
+            font-size: 24px; /* Increased font size */
+            margin: 10px 0; /* Adjusted margin for spacing */
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Added text shadow for better visibility */
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 14px; /* Smaller font for footer text */
+            color: #eee; /* Lighter color for footer */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Name: <%= name %></h1>
+        <h1>Password: <%= password %></h1>
+        <div class="footer">Welcome to our application!</div>
+    </div>
+</body>
+</html>

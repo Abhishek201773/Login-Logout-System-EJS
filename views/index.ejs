@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Logout</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url('/images/wp2767312.webp');
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: #333; /* Text color for contrast */
+        }
+        form {
+            background-color: rgba(199, 223, 223, 0.9); /* Slightly transparent for a layered effect */
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            width: 300px; /* Fixed width for consistency */
+            text-align: center; /* Center align text */
+        }
+        h2 {
+            margin-bottom: 20px; /* Space below the heading */
+            color: #4CAF50; /* Accent color for the heading */
+        }
+        label, input {
+            display: block;
+            margin-bottom: 15px; /* Increased spacing between elements */
+            font-size: 14px; /* Font size for labels */
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px; /* Increased padding for comfort */
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px; /* Larger font size for inputs */
+            transition: border-color 0.3s; /* Smooth border color transition */
+        }
+        input[type="text"]:focus, input[type="password"]:focus {
+            border-color: #4CAF50; /* Change border color on focus */
+            outline: none; /* Remove default outline */
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px; /* Larger font size for button */
+            transition: background-color 0.3s; /* Smooth background color transition */
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 12px; /* Smaller font for footer */
+            color: #666; /* Lighter color for footer */
+        }
+    </style>
+</head>
+<body>
+    <form action="/submit" method="post">
+        <h2>Login</h2>
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Enter your name" name="First" required>
+        
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter your Password" name="Pass" required>
+        
+        <button type="submit">Login</button>
+        <div class="footer">Don't have an account? <a href="/register" style="color: #4CAF50;">Sign Up</a></div>
+    </form>
+</body>
+</html>
